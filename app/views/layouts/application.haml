@@ -1,0 +1,14 @@
+!!!
+%html{:lang => "fr"}
+  %head
+    %meta{:charset => "UTF-8"}/
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0, maximum-scale=1.0"}
+    %meta{:content => "Trouvez un job", :property => "og:description"}
+    %meta{:content => "JobBoard", :property => "og:title"}
+    %title
+      = 'Job board'
+    %link{:rel => "stylesheet", :href => "http://fonts.googleapis.com/css?family=Roboto:400,500,900|Oswald:400,300"}/
+    %link{:rel => "stylesheet", :href => "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"}/
+
+  %body#body
+    = yield
