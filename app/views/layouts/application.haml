@@ -9,6 +9,8 @@
       = 'Job board'
     %link{:rel => "stylesheet", :href => "http://fonts.googleapis.com/css?family=Roboto:400,500,900|Oswald:400,300"}/
     %link{:rel => "stylesheet", :href => "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"}/
-
+    =javascript_include_tag "search"
+    =stylesheet_link_tag "search", :media => "all"
+    =stylesheet_link_tag "result", :media => "all"
   %body#body
     = yield

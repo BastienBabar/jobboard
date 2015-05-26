@@ -1,0 +1,10 @@
+#form
+  = form_tag search_path, :format => :json,  :remote => true, :id => 'search_form' do
+    = label_tag :keyword, 'Search for:'
+    %input#keyword{:name => "keyword", :type => "text"}/
+    = label_tag :location, 'In:'
+    %input#location{:name => "location", :type => "text"}/
+    -#%a.fa.btn.btn-lg.btn-success
+    = submit_tag 'Search', class: 'button'
+
+#result
